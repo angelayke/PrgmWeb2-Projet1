@@ -9,7 +9,7 @@ const Card = ({as, classOnHover, children}) => {
   //On change de l'état de la card lorsque la souris se retire de la card
   const onMouseLeave = () => setIsHover(false);
 
-  //const className = `card ${classOnHover} ${isHover ? 'hover' : ''}`;
+ 
   const className = `card ${as ? as : ''} ${isHover ? classOnHover : ""}`;
 
   return (

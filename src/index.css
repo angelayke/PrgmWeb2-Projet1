@@ -8,6 +8,7 @@
   --twitter: hsl(203, 89%, 53%);
   --instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
   --youTube: hsl(348, 97%, 39%);
+
   /*dark theme*/
   --toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
   
@@ -34,8 +35,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
   font-weight: 400, 700;
-  background-color: var(--very-dark-blue-bg);
-  color: var(--white-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,6 +50,17 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2rem;
 }
 
+#dark{
+  background-color: var(--very-dark-blue-bg);
+  color: var(--white-text);
+}
+
+#light{
+  background-color: var(--white-BG);
+  color: var(--very-dark-blue-text);
+}
+
+
 .flex{
   display: flex;
   flex-wrap: wrap;
@@ -61,8 +71,15 @@ h1, h2, h3, h4, h5, h6 {
 .card{
   width: 24%;
   margin-bottom: 1rem;
-  background-color: var(--dark-desaturated-blue-card-bg);
   border-radius: 0.5rem;
+}
+
+#dark .card{
+  background-color: var(--dark-desaturated-blue-card-bg);
+}
+
+#light .card{
+  background-color: var(--light-grayish-blue-card-bg);
 }
 
 table {
@@ -71,8 +88,22 @@ table {
   border: 0 solid transparent;
 }
 
-.hover{
+#dark .hover{
   background-color: var(--desaturated-blue-text);
 }
 
+#light .hover{
+  background-color: var(--light-grayish-blue-card-bg);
+}
+
+.switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch label {
+  margin: 10px;
+  font-weight: 600;
+}
 

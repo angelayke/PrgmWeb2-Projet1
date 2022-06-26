@@ -10,17 +10,38 @@ import Text from './Text';
 import Button from './Button';
 import Card from './Card';
 import Image from './Image';
+import { createContext, useState } from 'react';
+import ReactSwitch from 'react-switch';
+import { toBeChecked } from '@testing-library/jest-dom/dist/matchers';
+
+export const ThemeContext = createContext(null);
 
 function App() {
+  //source tutorial:https://www.youtube.com/watch?v=VzF2iTTc0MA&ab_channel=PedroTech
+  //fonction dark mode and light mode
+  const [theme, setTheme] = useState("dark");
+
+  const toggleTheme = () => {
+    setTheme((curr) =>(curr === "dark" ? "light" : "dark"));
+  }
   return (
-    <div>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <div id={theme}>
      <Container>
       <header>
-      <Text as="h1">Social Media Dashboard</Text>
-      <Text as="p">Total Followers: 23,004</Text>
-
-      <Button>Dark/Light</Button>
+      <div className="switch">
+        <div>
+        <Text as="h1">Social Media Dashboard</Text>
+        <Text as="p">Total Followers: 23,004</Text>
+        </div>
+        
+        <div>
+        <label>{theme === "dark" ? "Dark Mode" : "Light Mode"}</label>
+        <ReactSwitch onChange={toggleTheme} checked={theme === "light"}/>
+        </div>
+      </div>
       </header>
+      
       <div className='flex'>
         <Card as='card' classOnHover='hover'>
           <Image src={IconFb} alt='Facebook icon' />
@@ -166,6 +187,7 @@ function App() {
 
      </Container>
     </div>
+    </ThemeContext.Provider>
   );
 }
 
