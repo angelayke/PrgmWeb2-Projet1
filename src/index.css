@@ -154,10 +154,12 @@ table {
 }
 
 #instagram {
-  /*border-top: 3px linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);*/
-  border-width: 3px;
+ 
+  border-top: 3px solid hsl(329, 70%, 58%);
+  /*fonctionne pas.....argh*/
+  /* border-width: 3px;
   border-style: solid;
-  border-image: linear-gradient(to top, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  border-image: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%) 1);*/
 }
 
 #youtube {
