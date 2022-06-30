@@ -42,6 +42,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+h1{
+  margin-block-end: 0;
+}
+
+p{
+  margin-block-start: 0.5rem;
+}
+
 .container {
   width: 90%;
   max-width: var(--max-width);
@@ -68,9 +76,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card{
-  width: 24%;
+  width: 22%;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 #dark .card{
@@ -105,4 +115,40 @@ table {
   margin: 10px;
   font-weight: 600;
 }
+
+/*texte de la statistique des grandes card*/
+.bigStat {
+  font-size: 3.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/*texte de la statistique des petites card*/
+.lilStat {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.followers {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 5px;
+}
+
+.up {
+  color: var(--lime-green);
+}
+
+.down {
+  color: var(--bright-red);
+}
+
+
+/*.together{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}*/
 

@@ -43,18 +43,22 @@ function App() {
       
       <div className='flex'>
         <Card as='card' classOnHover='hover'>
-          <Image src={IconFb} alt='Facebook icon' />
-          <Text as="p">@nathanf</Text> <br />
-          <Text as="bigStat">1987</Text><br />
-          <Text as="followers">Followers</Text>
+          <div className='together'>
+            <Image src={IconFb} alt='Facebook icon' />
+            <Text as="p">@nathanf</Text>
+          </div> <br />
+          <Text as="bigStat">1987</Text>
+          <Text as="followers">FOLLOWERS</Text>
+          <div className='together'>
           <Image src={IconUp} /><Text as="up"> 12 Today</Text>
+          </div>
         </Card>
 
         <Card as='card' classOnHover='hover'>
           <Image src={IconTwitter} />
           <Text as="p">@nathanf</Text>
           <Text as="bigStat">1044</Text>
-          <Text as="followers">Followers</Text>
+          <Text as="followers">FOLLOWERS</Text>
           <Image src={IconUp} /><Text as="up"> 99 Today</Text>
         </Card>
 
@@ -62,7 +66,7 @@ function App() {
           <Image src={IconInsta} />
           <Text as="p">@realnathanf</Text>
           <Text as="bigStat">11k</Text>
-          <Text as="followers">Followers</Text>
+          <Text as="followers">FOLLOWERS</Text>
           <Image src={IconUp} /><Text as="up"> 1099 Today</Text>
         </Card>
 

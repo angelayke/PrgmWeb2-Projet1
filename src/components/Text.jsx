@@ -14,6 +14,16 @@ const Text = ({ as = "h1", children }) => {
              return <h6 className={as}>{children}</h6>;
         case "p":
              return <p className={as}>{children}</p>;
+        case "bigStat":
+             return <p className={as}>{children}</p>;
+        case "lilStat":
+             return <p className={as}>{children}</p>;
+        case "followers":
+             return <p className={as}>{children}</p>;
+        case "up":
+             return <p className={as}>{children}</p>;
+        case "down":
+             return <p className={as}>{children}</p>;
         default:
              return <h1 className={as}>{children}</h1>;
      }
