@@ -60,7 +60,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--very-dark-blue-text);
 }
 
-
 .flex{
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +92,7 @@ table {
 }
 
 #light .hover{
-  background-color: var(--light-grayish-blue-card-bg);
+  background-color: var(--dark-grayish-blue-text);
 }
 
 .switch {

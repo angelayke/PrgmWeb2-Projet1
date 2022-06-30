@@ -7,12 +7,11 @@ import IconYoutube from '../images/icon-youtube.svg';
 
 import Container from './Container';
 import Text from './Text';
-import Button from './Button';
 import Card from './Card';
 import Image from './Image';
 import { createContext, useState } from 'react';
 import ReactSwitch from 'react-switch';
-import { toBeChecked } from '@testing-library/jest-dom/dist/matchers';
+
 
 export const ThemeContext = createContext(null);
 
