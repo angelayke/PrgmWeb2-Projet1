@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const Card = ({as, classOnHover, children}) => {
+const Card = ({as, classOnHover, children, id}) => {
   const [isHover, setIsHover] = useState(false);
 
   //On change de l'état de la card lorsque l'on passe la souris dessus
@@ -14,6 +14,7 @@ const Card = ({as, classOnHover, children}) => {
 
   return (
     <div
+    id={id}
     className={className}
     onMouseEnter={onMouseEnter}
     onMouseLeave={onMouseLeave}>{children}</div>

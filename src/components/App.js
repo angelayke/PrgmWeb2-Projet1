@@ -42,40 +42,32 @@ function App() {
       </header>
       
       <div className='flex'>
-        <Card as='card' classOnHover='hover'>
-          <div className='together'>
-            <Image src={IconFb} alt='Facebook icon' />
-            <Text as="p">@nathanf</Text>
-          </div> <br />
+        <Card as='card' classOnHover='hover' id='facebook'>
+          <Text as="p"><Image src={IconFb} alt='Facebook icon' /> @nathanf</Text>
           <Text as="bigStat">1987</Text>
           <Text as="followers">FOLLOWERS</Text>
-          <div className='together'>
-          <Image src={IconUp} /><Text as="up"> 12 Today</Text>
-          </div>
+          <Text as="up"><Image src={IconUp} /> 12 Today</Text>
         </Card>
 
-        <Card as='card' classOnHover='hover'>
-          <Image src={IconTwitter} />
-          <Text as="p">@nathanf</Text>
+        <Card as='card' classOnHover='hover' id='twitter'> 
+          <Text as="p"><Image src={IconTwitter} /> @nathanf</Text>
           <Text as="bigStat">1044</Text>
-          <Text as="followers">FOLLOWERS</Text>
-          <Image src={IconUp} /><Text as="up"> 99 Today</Text>
+          <Text as="followers">FOLLOWERS</Text>   
+          <Text as="up"><Image src={IconUp} /> 99 Today</Text>
         </Card>
 
-        <Card as='card' classOnHover='hover'>
-          <Image src={IconInsta} />
-          <Text as="p">@realnathanf</Text>
+        <Card as='card' classOnHover='hover' id='instagram'>
+          <Text as="p"><Image src={IconInsta} /> @realnathanf</Text>
           <Text as="bigStat">11k</Text>
           <Text as="followers">FOLLOWERS</Text>
-          <Image src={IconUp} /><Text as="up"> 1099 Today</Text>
+          <Text as="up"><Image src={IconUp} /> 1099 Today</Text>
         </Card>
 
-        <Card as='card' classOnHover='hover'>
-          <Image src={IconYoutube} />
-          <Text as="p">Nathan F.</Text>
+        <Card as='card' classOnHover='hover' id='youtube'>
+          <Text as="p"><Image src={IconYoutube} /> Nathan F.</Text>
           <Text as="bigStat">8239</Text>
           <Text as="followers">SUBSCRIBER</Text>
-          <Image src={IconDown} /><Text as="down"> 144 Today</Text>
+          <Text as="down"><Image src={IconDown} /> 144 Today</Text>
         </Card>
       </div>
 
@@ -86,11 +78,12 @@ function App() {
         <table>
           <row>
             <td><Text as="p">Page Views</Text></td>
-            <td> <Image src={IconFb} alt='Facebook icon' /></td>
+            <td><Image src={IconFb} alt='Facebook icon' /></td>
           </row>
+          <br/>
           <row>
             <td><Text as="lilStat">87</Text></td>
-            <td><Image src={IconUp} /><Text as="up"> 3%</Text></td>
+            <td><Text as="up"><Image src={IconUp} /> 3%</Text></td>
           </row>
         </table>
       </Card>
@@ -101,9 +94,10 @@ function App() {
             <td><Text as="p">Likes</Text></td>
             <td> <Image src={IconFb} alt='Facebook icon' /></td>
           </row>
+          <br/>
           <row>
             <td><Text as="lilStat">52</Text></td>
-            <td><Image src={IconDown} /><Text as="down"> 2%</Text></td>
+            <td><Text as="down"><Image src={IconDown} /> 2%</Text></td>
           </row>
         </table>
       </Card>
@@ -114,9 +108,10 @@ function App() {
             <td><Text as="p">Likes</Text></td>
             <td> <Image src={IconInsta} alt='Instagram icon' /></td>
           </row>
+          <br/>
           <row>
             <td><Text as="lilStat">5462</Text></td>
-            <td><Image src={IconUp} /><Text as="up"> 2257%</Text></td>
+            <td><Text as="up"><Image src={IconUp} /> 2257%</Text></td>
           </row>
         </table>
       </Card>
@@ -127,9 +122,10 @@ function App() {
             <td><Text as="p">Profile Views</Text></td>
             <td> <Image src={IconInsta} alt='Instagram icon' /></td>
           </row>
+          <br/>
           <row>
             <td><Text as="lilStat">52k</Text></td>
-            <td><Image src={IconUp} /><Text as="up"> 1375%</Text></td>
+            <td><Text as="up"><Image src={IconUp} /> 1375%</Text></td>
           </row>
         </table>
       </Card>
@@ -140,9 +136,10 @@ function App() {
             <td><Text as="p">Retweets</Text></td>
             <td> <Image src={IconTwitter} alt='Twitter icon' /></td>
           </row>
+          <br/>
           <row>
             <td><Text as="lilStat">117</Text></td>
-            <td><Image src={IconUp} /><Text as="up"> 303%</Text></td>
+            <td><Text as="up"><Image src={IconUp} /> 303%</Text></td>
           </row>
         </table>
       </Card>
@@ -153,9 +150,10 @@ function App() {
             <td><Text as="p">Likes</Text></td>
             <td> <Image src={IconTwitter} alt='Twitter icon' /></td>
           </row>
+          <br/>
           <row>
             <td><Text as="lilStat">507</Text></td>
-            <td><Image src={IconUp} /><Text as="up"> 553%</Text></td>
+            <td><Text as="up"><Image src={IconUp} /> 553%</Text></td>
           </row>
         </table>
       </Card>
@@ -166,9 +164,10 @@ function App() {
             <td><Text as="p">Likes</Text></td>
             <td> <Image src={IconYoutube} alt='Youtube icon' /></td>
           </row>
+          <br/>
           <row>
             <td><Text as="lilStat">107</Text></td>
-            <td><Image src={IconDown} /><Text as="down"> 19%</Text></td>
+            <td><Text as="down"><Image src={IconDown} /> 19%</Text></td>
           </row>
         </table>
       </Card>
@@ -179,9 +178,10 @@ function App() {
             <td><Text as="p">Total Views</Text></td>
             <td> <Image src={IconYoutube} alt='Youtube icon' /></td>
           </row>
+          <br/>
           <row>
             <td><Text as="lilStat">1407</Text></td>
-            <td><Image src={IconDown} /><Text as="down"> 12%</Text></td>
+            <td><Text as="down"><Image src={IconDown} /> 12%</Text></td>
           </row>
         </table>
       </Card>

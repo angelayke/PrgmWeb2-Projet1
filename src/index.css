@@ -145,10 +145,21 @@ table {
   color: var(--bright-red);
 }
 
+#facebook {
+  border-top: 3px solid var(--facebook);
+}
 
-/*.together{
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-}*/
+#twitter {
+  border-top: 3px solid var(--twitter);
+}
 
+#instagram {
+  /*border-top: 3px linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);*/
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to top, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+#youtube {
+  border-top: 3px solid var(--youTube);
+}
